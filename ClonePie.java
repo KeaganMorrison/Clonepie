@@ -28,6 +28,18 @@ public class ClonePie {
         // if pie.yumminess >= yummiest the pie being checked is now equal to yummiest
         // Repeat cycle until definite yummiest pie is found
         // Add that pie to arraylist again
+        double yumminesst = 0;
+        Pie yummiestpie;
+        Pie[] piepie;
+        for(Pie pie: pies) {
+        
+
+            if(pie.yumminess>=yumminesst) {
+                pie = yummiestpie;
+            } 
+            pies.add(new Pie(yummiestpie.yumminess, yummiestpie.type));  
+        }
+
     }
 
     // inserting the cloned yummiest pie 
@@ -38,6 +50,10 @@ public class ClonePie {
         //Create two distinct pie variable
         // Create for loop cycling through each of the pies yumminess
         // if the yumminess of pie a = pie b: pie[b].yumminess = ArrayList<Pie>[ArrayList<Pie>.length+1].yumminess
+        Pie a;
+        Pie b;
+        Pie[] piepie;
+        //had trouble with this part
     }
 
 }
